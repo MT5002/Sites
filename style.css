@@ -1,0 +1,165 @@
+
+
+/* ----- RESET & BASE ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fc;
+    color: #1e2a3a;
+    line-height: 1.6;
+    padding: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* ----- HEADER / PROFILE ----- */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #eef2f7;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #dce3ed;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+.profile h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.profile h1 span {
+    color: #2563eb;
+}
+.profile .tagline {
+    font-size: 1.2rem;
+    color: #475569;
+    margin-top: 5px;
+}
+.profile .socials a {
+    color: #1e2a3a;
+    margin-right: 15px;
+    font-size: 1.4rem;
+    transition: color 0.2s;
+}
+.profile .socials a:hover {
+    color: #2563eb;
+}
+
+/* ----- SECTIONS ----- */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-left: 6px solid #2563eb;
+    padding-left: 16px;
+}
+.about-text {
+    color: #334155;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+/* ----- SKILLS ----- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+.skill-tag {
+    background: #eef2ff;
+    color: #2563eb;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* ----- PROJECTS ----- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 10px;
+}
+.project-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    background: #dce3ed;
+}
+.project-card .info {
+    padding: 18px;
+}
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+.project-card p {
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* ----- CONTACT / FOOTER ----- */
+.contact {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #eef2f7;
+    text-align: center;
+    color: #64748b;
+}
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 700px) {
+    .container {
+        padding: 20px;
+    }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile h1 {
+        font-size: 2.2rem;
+    }
+    .profile .socials a {
+        margin: 0 10px;
+    }
+}
