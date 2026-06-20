@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Maison | Restaurant</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="since">Est. 2026</span>
+                <h1>La Maison</h1>
+                <p class="tagline">Where rustic warmth meets modern palate</p>
+                <div class="hero-details">
+                    <span><i class="fas fa-clock"></i> Tue – Sun: 5PM – 11PM</span>
+                    <span><i class="fas fa-map-pin"></i> 21 Baker Street, NYC</span>
+                </div>
+                <div class="hero-badge">✦ Chef's Table Available ✦</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MENU NAVIGATION (TABS) ========== -->
+    <nav class="menu-nav" id="menuNav">
+        <div class="nav-container">
+            <button class="tab-btn active" data-filter="all">All</button>
+            <button class="tab-btn" data-filter="starters">Starters</button>
+            <button class="tab-btn" data-filter="mains">Main Courses</button>
+            <button class="tab-btn" data-filter="desserts">Desserts</button>
+            <button class="tab-btn" data-filter="drinks">Drinks</button>
+        </div>
+    </nav>
+
+    <!-- ========== MENU GRID ========== -->
+    <main class="menu-section">
+        <div class="container">
+
+            <!-- Category: Starters -->
+            <div class="menu-category" data-category="starters">
+                <h2><i class="fas fa-utensil-spoon"></i> Starters</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-content">
+                            <span class="item-badge">Signature</span>
+                            <h3>Truffle Arancini</h3>
+                            <p class="desc">Crispy risotto balls, black truffle, mozzarella, garlic aioli.</p>
+                        </div>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-content">
+                            <h3>Burrata Salad</h3>
+                            <p class="desc">Heirloom tomatoes, basil pesto, balsamic glaze, toasted pine nuts.</p>
+                        </div>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-content">
+                            <span class="item-badge">Chef's Pick</span>
+                            <h3>Smoked Duck Breast</h3>
+                            <p class="desc">Orange & fennel compote, microgreens, sourdough crisp.</p>
+                        </div>
+                        <span class="price">$18</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Mains -->
+            <div class="menu-category" data-category="mains">
+                <h2><i class="fas fa-utensils"></i> Main Courses</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-content">
+                            <span class="item-badge">Chef's Pick</span>
+                            <h3>Seared Scallops</h3>
+                            <p class="desc">Cauliflower purée, brown butter, sage, crispy pancetta.</p>
+                        </div>
+                        <span class="price">$32</span>
+                    </div>
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-content">
+                            <h3>Wagyu Beef Burger</h3>
+                            <p class="desc">Aged cheddar, caramelized onions, truffle fries, bourbon ketchup.</p>
+                        </div>
+                        <span class="price">$28</span>
+                    </div>
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-content">
+                            <h3>Lobster Ravioli</h3>
+                            <p class="desc">Homemade pasta, bisque sauce, chive oil, parmesan crisp.</p>
+                        </div>
+                        <span class="price">$34</span>
+                    </div>
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-content">
+                            <span class="item-badge">Vegan</span>
+                            <h3>Roasted Cauliflower Steak</h3>
+                            <p class="desc">Tahini dressing, pomegranate seeds, parsley, smoked almond.</p>
+                        </div>
+                        <span class="price">$24</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Desserts -->
+            <div class="menu-category" data-category="desserts">
+                <h2><i class="fas fa-cake"></i> Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-content">
+                            <h3>Dark Chocolate Fondant</h3>
+                            <p class="desc">Lava cake, vanilla bean ice cream, caramelized hazelnuts.</p>
+                        </div>
+                        <span class="price">$12</span>
+                    </div>
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-content">
+                            <span class="item-badge">Signature</span>
+                            <h3>Lavender Crème Brûlée</h3>
+                            <p class="desc">Candied violet, shortbread tuile, fresh berries.</p>
+                        </div>
+                        <span class="price">$14</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Drinks -->
+            <div class="menu-category" data-category="drinks">
+                <h2><i class="fas fa-wine-glass-alt"></i> Drinks</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-content">
+                            <h3>Old Fashioned</h3>
+                            <p class="desc">Bourbon, angostura, orange peel, smoked cherry.</p>
+                        </div>
+                        <span class="price">$15</span>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-content">
+                            <h3>Elderflower Spritz</h3>
+                            <p class="desc">Prosecco, elderflower tonic, cucumber, mint.</p>
+                        </div>
+                        <span class="price">$13</span>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-content">
+                            <h3>Cold Brew Negroni</h3>
+                            <p class="desc">Campari, vermouth, gin, cold brew infusion.</p>
+                        </div>
+                        <span class="price">$16</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials">
+        <div class="container">
+            <h2><i class="fas fa-quote-left"></i> What Guests Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"The truffle arancini is life-changing. A true hidden gem in the city."</p>
+                    <span>— Michelle W.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Incredible atmosphere and the scallops were cooked to absolute perfection."</p>
+                    <span>— James R.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== QR & FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="qr-section">
+                    <h3>Scan & Order</h3>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://your-site-url.com" alt="QR Code" id="qrCodeImg" />
+                    <p>View our live menu on your phone</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                    <p><i class="fas fa-envelope"></i> hello@lamaison.com</p>
+                    <p><i class="fas fa-clock"></i> Tue–Sun: 5PM – 11PM</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> La Maison. Crafted with warmth.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
